@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <h1>Zapraszam do zabawy!</h1>
+
+    <form id="quiz" name="quiz">
+
+        <p>Które miasto było pierwszą stolicą Polski?</p>
+        <input type="text" id="textbox" name="question1">
+
+        <p>Najwyższy szczyt w Polsce to:</p>
+        <input type="radio" id="mc" name="question2" value="Rysy"> Rysy<br>
+        <input type="radio" id="mc" name="question2" value="Giewont"> Giewont<br>
+
+        <p>Najgłębsze polskie jezioro to:</p>
+        <input type="radio" id="mc" name="question3" value="Śniardwy"> Śniardwy<br>
+        <input type="radio" id="mc" name="question3" value="Hańcza"> Hańcza<br>
+
+        <input id="button" type="button" value="Gotowe" onclick='check();'>
+
+    </form>
+
+    <div id="after_submit">
+        <p id="number_correct"></p>
+        <p id="message"></p>
+        <img id="picture">
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
